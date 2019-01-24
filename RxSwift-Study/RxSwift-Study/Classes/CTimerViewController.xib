@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CTimerViewController" customModule="RxSwift_Study" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="H8w-Nq-mHX" id="gcz-wf-Mnq"/>
+                <outlet property="startBtn" destination="AGR-dR-dWk" id="EGE-2j-fFd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-Nq-mHX">
+                    <rect key="frame" x="0.0" y="109" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="569387643.26470101">
+                        <!--2019-01-17 03:14:03 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="569286000">
+                        <!--2019-01-15 23:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="569397600">
+                        <!--2019-01-17 06:00:00 +0000-->
+                    </date>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGR-dR-dWk">
+                    <rect key="frame" x="0.0" y="352" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="gMJ-zm-ya7"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.21140143280000001" green="0.79146379229999997" blue="0.55926191810000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AGR-dR-dWk" firstAttribute="top" secondItem="H8w-Nq-mHX" secondAttribute="bottom" constant="27" id="3qY-K0-ukT"/>
+                <constraint firstItem="H8w-Nq-mHX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5W4-1t-5C6"/>
+                <constraint firstItem="H8w-Nq-mHX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8g8-PH-3J3"/>
+                <constraint firstItem="H8w-Nq-mHX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="89" id="GcQ-Ln-Ycc"/>
+                <constraint firstItem="AGR-dR-dWk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ch1-MD-YHC"/>
+                <constraint firstItem="AGR-dR-dWk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fHu-fL-Fod"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="391" y="135"/>
+        </view>
+    </objects>
+</document>
